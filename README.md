@@ -42,7 +42,7 @@ flowchart LR
 
 ## ✨ Signature Features
 
-- 🎯 **Autonomous Tour Mode (Default):** Starts immediately on activation. Glides down smoothly at a curated pace without requiring user mouse intervention.
+- 🎯 **Autonomous Tour Mode (Default):** Starts immediately on activation. Glides down smoothly at a curated 1× pace without requiring user mouse intervention.
 - 📐 **Live Figma-Style Bounding Boxes:** Cursors drag out rectangular bounds displaying real-time dimensions (`w × h`), blue guide lines, and snapping rules.
 - ✍️ **Typewriter Engine:** Headlines, subheadings, and paragraphs are typed out character-by-character with realistic cadence and blinking I-beam carets.
 - 🔊 **Procedural Web Audio Synthesizer:** Real-time tactile clicks, pops, pen taps, and typing noises synthesized in-browser (zero bulky MP3 dependencies).
@@ -145,11 +145,20 @@ const COLORS = [
 
 ## 💼 Credits & Acknowledgments
 
-- **Developed & Customized by:** [Joel Bastone Lopez](https://joelbastonelopez.com) — *3D Artist, Modeling, Sculpting, Animation & Real-Time 3D for the Web*.
-- **Concept Origin:** Inspired by Joel Califa's *Swarm* experiment and Dhvanil Patel's multiplayer cursor engine.
-- **Tailored For:** High-performance portfolios with WebGL, HTML5 showreel videos, and Bento Grids.
+- **Customized, Patched & Maintained by:** [Joel Bastone Lopez](https://joelbastonelopez.com) — *3D Artist, Modeling, Sculpting, Animation & Real-Time 3D for the Web*.
+  - Engineered WebGL & canvas shader isolation (`grainient.js` support).
+  - Isolated background HTML5 video showreels (`banner_web.webm`) from canvas collisions.
+  - Implemented automatic 1× cinematic Tour mode & instant frame-by-frame scroll synchronization.
+  - Resolved `.animate-on-scroll` & Bento Grid layout flattening issues.
+  - Filtered out inactive modals (`#quoteModal`) and phantom form layers.
+- **Original Base Prototype:** Based on [Dhvanil Patel's](https://github.com/DhvanilPatel/swarm-cursors) open-source `swarm-cursors` experiment.
+- **Concept Inspiration:** Inspired by [Joel Califa's](https://twitter.com/notdetails) viral interactive *Swarm* project.
 
 ---
+
+## 📄 License
+
+This project is open-source under the [MIT License](LICENSE).
 
 <div align="center">
   <sub>Crafted with passion for 3D & Web Experiences • <a href="https://joelbastonelopez.com">joelbastonelopez.com</a></sub>
